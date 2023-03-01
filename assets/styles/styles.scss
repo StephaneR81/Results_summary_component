@@ -1,0 +1,67 @@
+// Variables
+// Primary
+$lightRed: hsl(0, 100%, 67%);
+$orangeyYellow: hsl(39, 100%, 56%);
+$greenTeal: hsl(166, 100%, 37%);
+$cobaltBlue: hsl(234, 85%, 45%);
+
+// Gradients
+$lightSlateBlue-bg: hsl(252, 100%, 67%);
+$lightRoyalBlue-bg: hsl(241, 81%, 54%);
+
+$violetBlue-circle: hsla(256, 72%, 46%, 1);
+$persianBlue-circle: hsla(241, 72%, 46%, 0);
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+$paleBlue: hsl(221, 100%, 96%);
+$lightLavender: hsl(241, 100%, 89%);
+$darkGrayBlue: hsl(224, 30%, 27%);
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+// Reset CSS
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+main,
+aside {
+    margin: 0;
+    padding: 0;
+}
+
+// MOBILE
+
+// DESKTOP
+@media screen and (min-width:1440px) {}
