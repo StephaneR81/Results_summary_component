@@ -8,6 +8,7 @@ $cobaltBlue: hsl(234, 85%, 45%);
 // Gradients
 $lightSlateBlue-bg: hsl(252, 100%, 67%);
 $lightRoyalBlue-bg: hsl(241, 81%, 54%);
+$lightenRoyalBlue-bg: lighten($lightRoyalBlue-bg, 9);
 
 $violetBlue-circle: hsla(256, 72%, 46%, 1);
 $persianBlue-circle: hsla(241, 72%, 46%, 0);
@@ -44,10 +45,6 @@ main {
     height: 100%;
 }
 
-.wrapper {
-    height: 100vh;
-}
-
 h1,
 h2,
 h3,
@@ -62,6 +59,94 @@ aside {
 }
 
 // MOBILE
+.wrapper {
+    height: 100vh;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__first-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-height: 355px;
+        border-radius: 0 0 35px 35px;
+        background-color: $lightenRoyalBlue-bg;
+
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+            color: $lightLavender;
+            font-size: 18px;
+        }
+
+        .circle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 145px;
+            height: 145px;
+            margin: 0 auto;
+            margin-top: 30px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, #431ad6, $lightenRoyalBlue-bg);
+
+            // Score
+            & p:nth-child(1) {
+                color: $white;
+                font-size: 55px;
+                font-weight: 800;
+            }
+
+            // of 100
+            & p:nth-child(2) {
+                color: $lightLavender;
+                font-size: 15px;
+                font-weight: normal;
+            }
+        }
+
+        h2 {
+            color: $white;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 25px;
+            font-weight: normal;
+        }
+
+        // Sentence
+        & p:nth-child(4) {
+            width: 250px;
+            margin-top: 8px;
+            color: $white;
+            font-size: 15px;
+
+        }
+    }
+}
+
+.footer {
+    height: 50px;
+    margin-top: -50px;
+    background-color: $lightenRoyalBlue-bg;
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: $white;
+
+        a {
+            color: hsl(228, 45%, 44%);
+            color: $white;
+        }
+    }
+}
 
 // DESKTOP
 @media screen and (min-width:1440px) {}
