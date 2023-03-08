@@ -185,23 +185,6 @@ aside {
   background-color: #3e4d74;
 }
 
-.footer {
-  height: 50px;
-  margin-top: -50px;
-  background-color: #5754ed;
-}
-
-.footer .attribution {
-  font-size: 11px;
-  text-align: center;
-  color: white;
-}
-
-.footer .attribution a {
-  color: #3e52a3;
-  color: white;
-}
-
 @media screen and (min-width: 1440px) {
   main {
     align-items: center;
