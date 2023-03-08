@@ -18,6 +18,8 @@ body {
 main {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 h1,
@@ -38,7 +40,7 @@ aside {
 }
 
 .card {
-  width: 100%;
+  width: 375px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +52,7 @@ aside {
   align-items: center;
   width: 100%;
   min-height: 355px;
-  border-radius: 0 0 35px 35px;
+  border-radius: 0 0 30px 30px;
   background-color: #5754ed;
 }
 
@@ -99,6 +101,70 @@ aside {
   margin-top: 8px;
   color: white;
   font-size: 15px;
+}
+
+.card__second-part {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.card__second-part h3 {
+  margin: 25px 0;
+  font-size: 18px;
+  color: #303b5a;
+}
+
+.card__second-part .category {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.card__second-part .category img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.card__second-part .category p:nth-child(2) {
+  width: 100px;
+  margin-right: 105px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card__second-part .category p:nth-child(3) {
+  font-size: 15px;
+  font-weight: bold;
+  color: #303b5a;
+}
+
+.card__second-part .category p:nth-child(3) span {
+  color: #8191bb;
+}
+
+.card__second-part .red {
+  color: #ff7070;
+  background-color: #fff5f5;
+}
+
+.card__second-part .yellow {
+  color: #ffb938;
+  background-color: #fff8eb;
+}
+
+.card__second-part .green {
+  color: #00d6a4;
+  background-color: #e6fff9;
+}
+
+.card__second-part .blue {
+  color: #4542eb;
+  background-color: #f1f1fe;
 }
 
 .footer {

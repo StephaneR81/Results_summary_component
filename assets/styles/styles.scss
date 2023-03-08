@@ -43,6 +43,8 @@ body {
 main {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 h1,
@@ -64,7 +66,7 @@ aside {
 }
 
 .card {
-    width: 100%;
+    width: 375px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +77,7 @@ aside {
         align-items: center;
         width: 100%;
         min-height: 355px;
-        border-radius: 0 0 35px 35px;
+        border-radius: 0 0 30px 30px;
         background-color: $lightenRoyalBlue-bg;
 
         h1 {
@@ -127,6 +129,74 @@ aside {
             color: $white;
             font-size: 15px;
 
+        }
+    }
+
+    &__second-part {
+        width: 100%;
+        padding: 0 30px;
+
+        h3 {
+            margin: 25px 0;
+            font-size: 18px;
+            color: $darkGrayBlue;
+        }
+
+        .category {
+            width: 100%;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            border-radius: 10px;
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-left: 10px;
+            }
+
+            // Category title
+            & p:nth-child(2) {
+                width: 100px;
+                margin-right: 105px;
+                padding-left: 10px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            // Score
+            & p:nth-child(3) {
+                font-size: 15px;
+                font-weight: bold;
+                color: $darkGrayBlue;
+
+                // of 100
+                span {
+                    color: lighten($darkGrayBlue, 35);
+                }
+            }
+        }
+
+        // Category color classes
+        .red {
+            color: lighten($lightRed, 5);
+            background-color: lighten($lightRed, 31);
+        }
+
+        .yellow {
+            color: lighten($orangeyYellow, 5);
+            background-color: lighten($orangeyYellow, 40);
+        }
+
+        .green {
+            color: lighten($greenTeal, 5);
+            background-color: lighten($greenTeal, 58);
+        }
+
+        .blue {
+            color: lighten($lightRoyalBlue-bg, 5);
+            background-color: lighten($lightRoyalBlue-bg, 43);
         }
     }
 }
